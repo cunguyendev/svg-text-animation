@@ -3,18 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TypeScript & Parcel - The app</title>
+    <title>SVG Text Animation</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/main.scss" />
   </head>
   <body>
     <div class="app">
       <header class="app-header">
-        <img src="./assets/images/logo.svg" class="app-logo" alt="logo" />
-        <p>Edit <code>index.html</code> and save to reload.</p>
-        <a class="app-link" href="https://www.typescriptlang.org/docs/home.html" target="_blank">
-          Learn TypeScript
-        </a>
+        <svg
+          width="495" height="195" viewBox="0 0 495 195" fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          >
+          <rect
+            data-testid="card-bg"
+            x="0.5"
+            y="0.5"
+            rx="4.5"
+            height="99%"
+            stroke="#E4E2E2"
+            width="494"
+            fill="#fffefe"
+            stroke-opacity="0"
+            />
+          <g
+            data-testid="card-title"
+            transform="translate(25, 35)"
+            >
+            <g transform="translate(0, 0)">
+              <text
+                x="0"
+                y="0"
+                class="header"
+                data-testid="header"
+                >SVG Text Animation</text>
+            </g>
+          </g>
+          <g
+            data-testid="main-card-body"
+            transform="translate(0, 55)"
+            >
+            <g data-testid="rank-circle"
+              transform="translate(400, 47.5)">
+              <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
+              <circle class="rank-circle" cx="-10" cy="8" r="40" />
+              <g class="rank-text">
+                <text
+                  x="0"
+                  y="0"
+                  alignment-baseline="central"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                  >
+                  49%
+                </text>
+              </g>
+            </g>
+            <svg x="0" y="0">
+              <g transform="translate(0, 0)">
+                <g class="stagger" style="animation-delay: 450ms" transform="translate(25, 0)">
+                  <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                    <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+                  </svg>
+                  <text class="stat bold" x="25" y="12.5">Lorem, ipsum.</text>
+                  <text
+                    class="stat"
+                    x="190"
+                    y="12.5"
+                    data-testid="stars"
+                    >99</text>
+                </g>
+              </g>
+              <g transform="translate(0, 25)">
+                <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
+                  <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                    <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+                  </svg>
+                  <text class="stat bold" x="25" y="12.5">Lorem, ipsum dolor.</text>
+                  <text
+                    class="stat"
+                    x="190"
+                    y="12.5"
+                    data-testid="commits"
+                    >99</text>
+                </g>
+              </g>
+              <g transform="translate(0, 50)">
+                <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
+                  <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                    <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+                  </svg>
+                  <text class="stat bold" x="25" y="12.5">Lorem, ipsum.</text>
+                  <text
+                    class="stat"
+                    x="190"
+                    y="12.5"
+                    data-testid="prs"
+                    >99</text>
+                </g>
+              </g>
+              <g transform="translate(0, 75)">
+                <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
+                  <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                    <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+                  </svg>
+                  <text class="stat bold" x="25" y="12.5">Lorem, ipsum.</text>
+                  <text
+                    class="stat"
+                    x="190"
+                    y="12.5"
+                    data-testid="issues"
+                    >99</text>
+                </g>
+              </g>
+              <g transform="translate(0, 100)">
+                <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
+                  <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                    <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+                  </svg>
+                  <text class="stat bold" x="25" y="12.5">Lorem, ipsum.</text>
+                  <text
+                    class="stat"
+                    x="190"
+                    y="12.5"
+                    data-testid="contribs"
+                    >99</text>
+                </g>
+              </g>
+            </svg>
+          </g>
+        </svg>
       </header>
     </div>
   </body>
